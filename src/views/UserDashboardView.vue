@@ -1,5 +1,6 @@
 <template>
-  <div class="container-fluid page-body bg-light">
+<DashboardSkeletonView v-if="getskeletonLoader"></DashboardSkeletonView>
+  <div v-if="!getskeletonLoader" class="container-fluid page-body bg-light">
 
 <div class="row">
 
@@ -355,9 +356,12 @@
         </ul>
 
 
-          <ul class="nav flex-column mb-auto px-4 mt-3 box-shadow" style="background:gray;height:180px">
+          <ul class="nav flex-column mb-auto px-4 mt-3 box-shadow bg-dark">
           <li class="nav-item p-0 m-0">
-               
+                <div class="d-flex justify-content-center py-5">
+                <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
+                 <h3>Adverts here</h3>
+             </div>
           </li>
         </ul>
 
@@ -373,10 +377,7 @@
         <div class="card-body bg-light p-0 m-0">
           <div class="d-flex flex-row justify-content-between mt-3">
             <h4 class="card-title">Home</h4>
-            <!-- <ul class="ul-list mx-2 list-inline">
-              <li class="list-inline-item"><p class="text-muted mb-1 small p-view-all p-1">Latest</p> </li>
-              <li class="list-inline-item"><i class="mdi mdi-chevron-down ul-list-icon"></i></li>
-            </ul> -->
+           
             <div class="dropdown">
               <a
                 class="dropdown-toggle text-muted"
@@ -402,8 +403,9 @@
 
       <div class="card   p-0 mt-2 mb-4">
         <div class="card-body m-0 p-0">
-             <div class="d-flex justify-content-center">
-                <img src="/cars/11231.jpg" class="img-fluid" alt="...">
+             <div class="d-flex justify-content-center bg-dark py-5">
+                <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
+                 <h1>Adverts here</h1>
              </div>
           </div>
       </div>
@@ -931,9 +933,30 @@
 </template>
 
 <script>
+
+import DashboardSkeletonView from './DashboardSkeletonView.vue'
+
 export default {
-  
-}
+
+   created(){
+     
+   },
+
+
+   computed: {
+      getskeletonLoader(){
+        return this.$store.getters.getskeletonLoader
+      },
+   },
+
+   methods:{
+     
+   },
+
+    components: { DashboardSkeletonView }
+    
+};
+
 </script>
 
 <style>

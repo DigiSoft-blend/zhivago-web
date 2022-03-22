@@ -9,6 +9,7 @@ export default createStore({
       token: localStorage.getItem('token') || null,  
       Name: 'welcome',
       loading: false,
+      skeletonLoader: false,
       user: [],
       loginError: '',
       registrationError: '',
@@ -16,6 +17,9 @@ export default createStore({
       messageForgotPassword: ''
     },
     getters:{
+        getskeletonLoader(state){
+          return state.skeletonLoader
+        },
         getForgotPasswordError(state){
           return state.forgotPasswordError
         },
@@ -174,6 +178,9 @@ export default createStore({
         getLoader(state, payLoad){
           state.loading = payLoad
         }, 
+        getskeletonLoader(state, payLoad){
+          state.skeletonLoader = payLoad
+        },
         getUser(state, user){
           state.user = user
         },
