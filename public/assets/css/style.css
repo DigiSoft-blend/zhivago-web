@@ -99,6 +99,22 @@ background-color: #ecf3fa;
   }
 }
 
+.small-screen-logo{
+  display: none;
+}
+
+@media( max-width: 400px){
+  .small-screen-logo{
+    display: block;
+  }
+}
+@media( max-width: 991px){
+  .small-screen-logo{
+    display: block;
+    margin-right: auto;
+  }
+}
+
 
 /* card body main content */
 .card{

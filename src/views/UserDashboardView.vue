@@ -7,39 +7,9 @@
 
   <div class="col-md-12  bg-secondary">
     <div class="fixed-top">
-    
 
-   
-<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
- 
-     <img class="navbar-brand logo" src="/logo/logo.png" alt="logo" />
 
-    
-    <button class="navbar-toggler" type="button">
-      <i class="fas fa-bars" onclick="toggleSideNav()"></i>
-    </button>
-
-   
-    <div class="collapse navbar-collapse" id="navbarButtonsExample">
-       <form style="margin-left:52px">
-             <div class="search">
-               <input class="nav-form-input form-control" type="text" placeholder="Search" aria-label="Search">
-               <i class="mdi mdi-magnify icon"></i> 
-             </div>
-          </form>
-      <div class="d-flex align-items-center px-5">
-        <button type="button" class="btn btn-success px-3 me-2">
-          Login
-        </button>
-        <button type="button" class="btn btn-primary me-2">
-          Sign up for free
-        </button>
-      </div>
-    </div>
-</nav> -->
-<!-- Navbar -->
-
-<!-- Navbar -->
+    <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <!-- Container wrapper -->
   <div class="container-fluid">
@@ -48,14 +18,14 @@
       <i class="fas fa-bars" onclick="toggleSideNav()"></i>
     </button>
 
-     <!-- <img class="navbar-brand" src="/logo/logo.png" alt="logo"  height="40" width="120"/> -->
+     <img class="navbar-brand small-screen-logo" src="/assets/images/zhivago-logo.png" alt="logo"  height="40" width="160"/>
 
     <!-- Collapsible wrapper -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
      
-      <img class="navbar-brand logo" src="/logo/logo.png" alt="logo" />
+       <img class="navbar-brand logo mr-5" src="/assets/images/zhivago-logo.png" alt="logo" />
 
-          <form style="margin-left:28px">
+          <form style="margin-left:26px">
              <div class="search">
                <input class="nav-form-input form-control" type="text" placeholder="Search" aria-label="Search">
                <i class="mdi mdi-magnify icon"></i> 
@@ -69,7 +39,7 @@
     <div class="d-flex align-items-center">
       <!-- Icon -->
       <a class="text-reset me-3" href="#">
-        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-message"></i>
       </a>
 
       <!-- Notifications -->
@@ -139,7 +109,7 @@
   <!-- Container wrapper -->
 </nav>
 <!-- Navbar -->
-
+    
 
    </div>
   </div>
@@ -150,30 +120,91 @@
     <nav id="mySidenav" class="col-md-3 sidebar-left p-4 d-md-block bg-light">
       <div class="position-sticky pt-5">
         <ul class="nav flex-column  nav-pills list-unstyled">
-          <li class="nav-item mb-3">
+          <li class="mb-3">
             <a class="nav-link active" aria-current="page" href="/login">
              <span class="mdi mdi-home nav-icon" ></span>
               Home
             </a>
-            <a class="nav-link" aria-current="page" href="#">
+            <a class="nav-link bg-light" aria-current="page" href="#">
               <span class="mdi mdi-account nav-icon" ></span>
               Members
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
+
+      <li class="mb-1 nav-item nav-link bg-light">
+        <a class="text-muted align-items-center rounded collapsed d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+         Home
+         <span class="mdi mdi-chevron-down" style="font-size:20px" ></span>
+        </a>
+        <div class="collapse show" id="home-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+             <li class="nav-item">
+            <a class="nav-link bg-light" href="#">
              <span class="" >&#x1F354;</span>
               Customers
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link bg-light" href="#">
              <span class="" >&#x1F624;</span>
               Reports
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link bg-light" href="#">
+              <span class="" >&#x1F594;</span>
+              Integrations
+            </a>
+          </li>
+        
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1 nav-item nav-link bg-light">
+        <a class="text-muted  align-items-center collapsed d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+          Dashboard
+          <span class="mdi mdi-chevron-down" style="font-size:20px" ></span>
+        </a>
+        <div class="collapse" id="dashboard-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+             <li class="nav-item">
+            <a class="nav-link bg-light" href="#">
+             <span class="" >&#x1F354;</span>
+              Customers
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bg-light" href="#">
+             <span class="" >&#x1F624;</span>
+              Reports
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bg-light" href="#">
+              <span class="" >&#x1F594;</span>
+              Integrations
+            </a>
+          </li>
+        
+          </ul>
+        </div>
+      </li>
+
+
+          <li class="nav-item bg-light">
+            <a class="nav-link bg-light" href="#">
+             <span class="" >&#x1F354;</span>
+              Customers
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bg-light" href="#">
+             <span class="" >&#x1F624;</span>
+              Reports
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bg-light" href="#">
               <span class="" >&#x1F594;</span>
               Integrations
             </a>
@@ -188,61 +219,61 @@
         </h6>
         <ul class="nav flex-column  nav-pills list-unstyled">
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link bg-light" href="#">
                <span class="" >&#x1F554;</span>
               Current month
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link bg-light" href="#">
             <span class="" >&#x1F353;</span>
               Last quarter
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link bg-light" href="#">
               <span class="" >&#x1F324;</span>
               Social engagement
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link bg-light" href="#">
                <span class="" >&#x1F351;</span>
               Year-end sale
             </a>
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link bg-light" href="#">
             <span class="" >&#x1F353;</span>
               Last quarter
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link bg-light" href="#">
               <span class="" >&#x1F324;</span>
               Social engagement
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link bg-light" href="#">
                <span class="" >&#x1F351;</span>
               Year-end sale
             </a>
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link bg-light" href="#">
             <span class="" >&#x1F353;</span>
               Last quarter
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link bg-light" href="#">
               <span class="" >&#x1F324;</span>
               Social engagement
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link bg-light" href="#">
                <span class="" >&#x1F351;</span>
               Year-end sale
             </a>
@@ -348,7 +379,7 @@
             </ul> -->
             <div class="dropdown">
               <a
-                class="btn btn-transparent dropdown-toggle"
+                class="dropdown-toggle text-muted"
                 href="#"
                 role="button"
                 id="dropdownMenuLink"
@@ -899,32 +930,11 @@
   </div>
 </template>
 
-// <script>
-// import { ref } from 'vue'
-// const loadUserData = async() => {
-//     return new Promise((resolve => {
-//         setTimeout(() => {
-//           resolve({
-//             name: 'silas udofia',
-//             pic: 'assets/images/faces/face6.jpg',
-//             bio: 'vue js developer'
-//           })
-//         },2000)
-//     }))
-// }
-// export default {
-//    async setup(){
-//      const userData = ref(await loadUserData())
-//      return {
-//       userData
-//      }
-//    }
-// }
-// </script>
-
-
-
-
+<script>
+export default {
+  
+}
+</script>
 
 <style>
 

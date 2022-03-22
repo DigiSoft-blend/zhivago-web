@@ -4,7 +4,7 @@
    <Loader v-if="getLoader" class="text-center"></Loader> 
   <div class="col-md-6  text-dark">
          
-  <main class="form-signin">
+  <main class="form-signin animate__animated animate__fadeInLeft">
     
   <form @submit="login">
     <div class="mt-5">
@@ -117,7 +117,7 @@ export default {
             })
                 .then(response => {
                 this.errorMessage = '';
-                this.$router.push({ name: 'dashboard'})
+                this.$router.push({ name: 'userdashboard'})
                 console.log(response);
             })
                 .catch(error => {

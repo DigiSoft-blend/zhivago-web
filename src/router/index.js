@@ -14,8 +14,13 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView
+      name: 'login',
+      component: LoginViewVue
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: LoginViewVue
     },
     {
       path: '/about',
@@ -26,11 +31,6 @@ const router = createRouter({
       path: '/register',
       name: 'register',
       component: RegisterViewVue
-    },
-    {
-      path: '/login',
-      name: 'login',
-      component: LoginViewVue
     },
     {
       path: '/dashboard',

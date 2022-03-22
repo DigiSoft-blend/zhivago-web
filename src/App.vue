@@ -9,12 +9,4 @@ import DashboardSkeleton from './views/DashboardSkeletonView.vue'
 
 <template>
   <RouterView /> 
-  <!-- <Suspense>
-    <template #default>
-    <HomeView></HomeView>
-    </template>
-    <template #fallback>
-     <DashboardSkeleton></DashboardSkeleton>
-    </template>
-  </Suspense> -->
 </template>
