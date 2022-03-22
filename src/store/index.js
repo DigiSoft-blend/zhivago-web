@@ -120,6 +120,38 @@ export default createStore({
            })
        },
 
+
+       destroyToken(context){ 
+        //Tell axios the header you want
+        axios.defaults.headers.common['Content-Type'] = 'application/json',
+        axios.defaults.headers.common['Accept'] = 'application/json'
+     
+        // if(context.getters.loggedIn){
+    
+          context.commit('getLoader', true)
+          
+          return new Promise(( resolve, reject) => {
+            axios.post('/logout')
+            .then(response => {
+              localStorage.removeItem('token')
+              context.commit('destroyToken')
+              resolve(response)
+              context.commit('getLoader', false)
+            })
+            .catch(error => {
+              localStorage.removeItem('token')
+              localStorage.removeItem('admin_key')
+              context.commit('destroyToken')
+              context.commit('getLoader',false)
+              reject(error)
+            })
+           })
+        // }
+      },
+    
+     
+
+
        forgotPassword(context, credentials){
         context.state.messageForgotPassword = ''
         context.state.forgotPasswordError = ''
@@ -195,7 +227,10 @@ export default createStore({
         },
         getForgotPasswordError(state, error){
           state.forgotPasswordError = error
-        }
+        },
+        destroyToken(state){
+          state.token = null
+        },
     }
 })
 

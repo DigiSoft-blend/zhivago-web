@@ -100,7 +100,7 @@
             <a class="dropdown-item" href="#">Settings</a>
           </li>
           <li>
-            <a class="dropdown-item" href="#">Logout</a>
+            <router-link class="dropdown-item" to="/logout">Logout</router-link>
           </li>
         </ul>
       </div>
