@@ -134,26 +134,26 @@
 
       <li class="mb-1 nav-item nav-link bg-light">
         <a class="text-muted align-items-center rounded collapsed d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-         Home
+        Marketplace
          <span class="mdi mdi-chevron-down" style="font-size:20px" ></span>
         </a>
         <div class="collapse show" id="home-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
              <li class="nav-item">
             <a class="nav-link bg-light" href="#">
-             <span class="" >&#x1F354;</span>
+             <span class="" >&#x1F454;</span>
               Customers
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link bg-light" href="#">
-             <span class="" >&#x1F624;</span>
+             <span class="" >&#x1F524;</span>
               Reports
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link bg-light" href="#">
-              <span class="" >&#x1F594;</span>
+              <span class="mdi mdi-git" ></span>
               Integrations
             </a>
           </li>
@@ -163,7 +163,7 @@
       </li>
       <li class="mb-1 nav-item nav-link bg-light">
         <a class="text-muted  align-items-center collapsed d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-          Dashboard
+         Services
           <span class="mdi mdi-chevron-down" style="font-size:20px" ></span>
         </a>
         <div class="collapse" id="dashboard-collapse">
@@ -182,7 +182,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link bg-light" href="#">
-              <span class="" >&#x1F594;</span>
+              <span class="mdi mdi-web" ></span>
               Integrations
             </a>
           </li>
@@ -206,16 +206,16 @@
           </li>
           <li class="nav-item">
             <a class="nav-link bg-light" href="#">
-              <span class="" >&#x1F594;</span>
+              <span class="mdi mdi-git" ></span>
               Integrations
             </a>
           </li>
         </ul>
 
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-          <span >Saved reports</span>
+          <span >Events</span>
           <a class="link-secondary" href="#" aria-label="Add a new report">
-           <span class="" >&#x2F354;</span>
+           <span class="mdi mdi-calendar" ></span>
           </a>
         </h6>
         <ul class="nav flex-column  nav-pills list-unstyled">
@@ -405,7 +405,15 @@
         <div class="card-body m-0 p-0">
              <div class="d-flex justify-content-center bg-dark py-5">
                 <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
-                 <h1>Adverts here</h1>
+                 <ul class="nav flex-column mb-auto px-4 mt-3 box-shadow bg-dark">
+                  <li class="nav-item p-0 m-0">
+                        <div class="d-flex justify-content-center">
+                        <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
+                          <h1>Adverts here</h1>
+                      </div>
+                  </li>
+                </ul>
+                
              </div>
           </div>
       </div>
