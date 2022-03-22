@@ -12,20 +12,20 @@
     <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <!-- Container wrapper -->
-  <div class="container-fluid">
+  
     <!-- Toggle button -->
     <button class="navbar-toggler" type="button">
       <i class="fas fa-bars" onclick="toggleSideNav()"></i>
     </button>
 
-     <img class="navbar-brand small-screen-logo" src="/assets/images/zhivago-logo.png" alt="logo"  height="40" width="160"/>
+     <img class="navbar-brand small-screen-logo" src="/assets/images/zhivago-logo.png" alt="logo"  height="30" width="120"/>
 
     <!-- Collapsible wrapper -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
      
-       <img class="navbar-brand logo mr-5" src="/assets/images/zhivago-logo.png" alt="logo" />
+       <img class="navbar-brand logo mx-4" src="/assets/images/zhivago-logo.png" alt="logo" />
 
-          <form style="margin-left:26px">
+          <form style="margin-left:18px">
              <div class="search">
                <input class="nav-form-input form-control" type="text" placeholder="Search" aria-label="Search">
                <i class="mdi mdi-magnify icon"></i> 
@@ -36,7 +36,7 @@
     <!-- Collapsible wrapper -->
 
     <!-- Right elements -->
-    <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center mx-3">
       <!-- Icon -->
       <a class="text-reset me-3" href="#">
         <i class="fas fa-message"></i>
@@ -105,7 +105,7 @@
       </div>
     </div>
     <!-- Right elements -->
-  </div>
+  <!-- </div> -->
   <!-- Container wrapper -->
 </nav>
 <!-- Navbar -->
