@@ -8,14 +8,15 @@ import ForgotPasswordView from '../views/ForgotPasswordView.vue'
 import RegistrationSuccessView from '../views/RegistrationSuccessView.vue'
 import LogoutView from '../views/LogoutView.vue'
 import UserDashboardView from '../views/UserDashboardView.vue'
+import defaultView from '../views/defaultView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'login',
-      component: LoginViewVue
+      name: 'home',
+      component:defaultView
     },
     {
       path: '/login',
