@@ -92,8 +92,8 @@ background-color: #ecf3fa;
  /* linkup logo */
 
  .logo{
-  width: 270px;
-  height: 50px;
+  width: 250px;
+  height: 60px;
 }
 
 @media( max-width: 400px){
@@ -141,7 +141,8 @@ border: none;
 
 
 /* side nav left and right */
-.sidebar-left{
+.sidebar-left{  
+margin-top: 16px;  
 min-height: 100vh;
 position: fixed;
 top: 0;
@@ -196,14 +197,15 @@ overflow-x: hidden;
 
 
 .sidebar-left a{
- /* text-decoration: none;
+ text-decoration: none;
  font-size: 13px;
  display: block;
- transition: 0.3s; */
+ transition: 0.3s;
 }
 
 
 .sidebar-right{
+  margin-top: 16px;
   height: 100vh;
   position: fixed;
   top: 0;

@@ -19,14 +19,14 @@
       <i class="fas fa-bars" onclick="toggleSideNav()"></i>
     </button>
 
-     <img class="navbar-brand small-screen-logo" src="/assets/images/zhivago-logo.png" alt="logo"  height="30" width="120"/>
+     <img class="navbar-brand small-screen-logo" src="/assets/images/zhivago-logo.png" alt="logo"  height="40" width="130"/>
 
     <!-- Collapsible wrapper -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
      
        <img class="navbar-brand logo mx-4" src="/assets/images/zhivago-logo.png" alt="logo" />
 
-          <form style="margin-left:18px">
+          <form style="margin-left:38px">
              <div class="search">
                <input class="nav-form-input form-control" type="text" placeholder="Search" aria-label="Search">
                <i class="mdi mdi-magnify icon"></i> 
@@ -291,19 +291,19 @@
   
   <nav id="sidebarMenu" class="col-md-3 sidebar-right p-4 d-md-block bg-light collapse">
       <div class="position-sticky pt-5">
-       <ul class="nav flex-column mb-auto px-4 box-shadow" style="background:white;">
+       <ul class="nav flex-column mb-auto px-4 box-shadow rounded" style="background:white;">
           <li class="nav-item">
             <p class="Trend-text px-1 mt-3 text-muted p-trending-post">Trending Posts</p>
                  <div class="preview-list">
                       <div class="preview-item">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face1.jpg" alt="image" class="rounded-circle status" />
+                          <img src="/assets/images/faces/face2.jpg" alt="image" class="rounded-circle status" />
                           <div class="active"></div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
                             <div class="d-flex d-md-block d-xl-flex justify-content-between">
-                              <h6 class="preview-subject p-user-name">Leonard</h6>
+                              <h6 class="preview-subject p-user-name">Padosky Cardiento</h6>
                             </div>
                             <p class="text-muted p-sidbar-text">Well, it seems to be working now.</p>
                           </div>
@@ -315,13 +315,13 @@
               <div class="preview-list">
                       <div class="preview-item">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face2.jpg" alt="image" class="rounded-circle" />
+                          <img src="/assets/images/faces/face4.jpg" alt="image" class="rounded-circle" />
                           <div class="active"></div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
                             <div class="d-flex d-md-block d-xl-flex justify-content-between">
-                              <h6 class="preview-subject p-user-name">Leonard</h6>
+                              <h6 class="preview-subject p-user-name">Marcelo frichxzany</h6>
                             </div>
                             <p class="text-muted p-sidbar-text">Well, it seems to be working now.</p>
                           </div>
@@ -335,13 +335,13 @@
               <div class="preview-list">
                       <div class="preview-item">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face3.jpg" alt="image" class="rounded-circle" />
+                          <img src="/assets/images/faces/face8.jpg" alt="image" class="rounded-circle" />
                           <div class="active"></div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
                             <div class="d-flex d-md-block d-xl-flex justify-content-between">
-                              <h6 class="preview-subject p-user-name">Leonard</h6>
+                              <h6 class="preview-subject p-user-name">Sexy Tilda</h6>
                             </div>
                             <p class="text-muted p-sidbar-text">Well, it seems to be working now.</p>
                           </div>
@@ -423,13 +423,13 @@
                   <div class="preview-list">
                       <div class="preview-item">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face6.jpg" alt="image" class="rounded-circle status" />
+                          <img src="/assets/images/faces/face15.jpg" alt="image" class="rounded-circle status" />
                           <div class="active"></div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
                             <div class="d-flex d-md-block d-xl-flex justify-content-between">
-                              <h6 class="preview-subject p-user-name">Silas Udofia</h6>
+                              <h6 class="preview-subject p-user-name">Jack Thummar</h6>
                             </div>
                              <span class="badge rounded-pill bg-primary">Admin</span>
                              <span class="mx-1 badge rounded-pill bg-primary">now</span>
@@ -442,10 +442,10 @@
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
-               <p class="p-card-body">hello there</p>
+               <p class="p-card-body">hello there sexy</p>
             </div>
              <div class="d-flex justify-content-center py-1">
-                <img src="/cars/11231.jpg" class="img-fluid" alt="...">
+                <img src="/img/IMG-20220322-WA0006.jpg" class="img-fluid" alt="...">
              </div>
           </div>
           <div class="card-footer mt-4 py-3 border-top" style="background-color:white; border:none">
@@ -478,13 +478,13 @@
                   <div class="preview-list">
                       <div class="preview-item">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face6.jpg" alt="image" class="rounded-circle" />
+                          <img src="/assets/images/faces/face2.jpg" alt="image" class="rounded-circle" />
                          <div class="active"></div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
                             <div class="d-flex d-md-block d-xl-flex justify-content-between">
-                              <h6 class="preview-subject p-user-name">Silas Udofia</h6>
+                              <h6 class="preview-subject p-user-name">Padosky Cardiento</h6>
                             </div>
                             <span class="badge rounded-pill bg-primary">5 days ago</span>
                             <p class="text-muted p-card-header mt-2">Well, it seems to be working now.</p>
@@ -499,7 +499,7 @@
                <p class="p-card-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus tenetur ab odio adipisci nihil recusandae. Nobis fuga minus excepturi quae tenetur rem aperiam accusamus amet ex possimus? Consectetur, debitis corporis.</p>
              </div>
               <div class="d-flex justify-content-center py-1">
-                 <img src="/cars/14444.jpg" class="img-fluid" alt="...">
+                 <img src="/img/IMG-20220322-WA0007.jpg" class="img-fluid" alt="...">
               </div>
           </div>
           <div class="card-footer mt-4 py-3 border-top" style="background-color:white; border:none">
@@ -532,13 +532,13 @@
                   <div class="preview-list">
                       <div class="preview-item">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face6.jpg" alt="image" class="rounded-circle" />
+                          <img src="/assets/images/faces/face4.jpg" alt="image" class="rounded-circle" />
                          <div class="active"></div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
                             <div class="d-flex d-md-block d-xl-flex justify-content-between">
-                              <h6 class="preview-subject p-user-name">Silas Udofia</h6>
+                              <h6 class="preview-subject p-user-name">Marcelo frichxzany</h6>
                             </div>
                             <span class="badge rounded-pill bg-primary">3 days ago</span>
                             <p class="text-muted p-card-header mt-2">Well, it seems to be working now.</p>
@@ -550,10 +550,10 @@
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
-               <p class="p-card-body">fun filled place, really had lots of fun here</p>
+               <p class="p-card-body">Come bang me babe</p>
             </div>
              <div class="d-flex justify-content-center py-1">
-               <img src="/cars/16532.jpg" class="img-fluid" alt="...">
+               <img src="/img/IMG-20220322-WA0008.jpg" class="img-fluid" alt="...">
              </div>
           </div>
           <div class="card-footer mt-4 py-3 border-top" style="background-color:white; border:none">
@@ -585,13 +585,13 @@
                   <div class="preview-list">
                       <div class="preview-item">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face6.jpg" alt="image" class="rounded-circle" />
+                          <img src="/assets/images/faces/face7.jpg" alt="image" class="rounded-circle" />
                          <div class="active"></div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
                             <div class="d-flex d-md-block d-xl-flex justify-content-between">
-                              <h6 class="preview-subject p-user-name">Silas Udofia</h6>
+                              <h6 class="preview-subject p-user-name">Tom Cruise</h6>
                             </div>
                             <span class="badge rounded-pill bg-primary">2 days ago</span>
                             <p class="text-muted p-card-header mt-2">Well, it seems to be working now.</p>
@@ -603,10 +603,10 @@
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
-              <p class="p-card-body">Nature is amazing</p>
+              <p class="p-card-body">Horny sexy girls damn!!!</p>
             </div>
             <div class="d-flex justify-content-center py-1">
-               <img src="/cars/33116.jpg" class="img-fluid" alt="...">
+               <img src="/img/IMG-20220322-WA0009.jpg" class="img-fluid" alt="...">
             </div>
           </div>
           <div class="card-footer mt-4 py-3 border-top" style="background-color:white; border:none">
@@ -640,13 +640,13 @@
                   <div class="preview-list">
                       <div class="preview-item">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face6.jpg" alt="image" class="rounded-circle" />
+                          <img src="/assets/images/faces/face8.jpg" alt="image" class="rounded-circle" />
                          <div class="active"></div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
                             <div class="d-flex d-md-block d-xl-flex justify-content-between">
-                              <h6 class="preview-subject p-user-name">Silas Udofia</h6>
+                              <h6 class="preview-subject p-user-name">Sexy Tilda</h6>
                             </div>
                             <span class="badge rounded-pill bg-primary">2 days ago</span>
                             <p class="text-muted p-card-header mt-2">Well, it seems to be working now.</p>
@@ -658,10 +658,10 @@
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
-              <p class="p-card-body">Nature is amazing</p>
+              <p class="p-card-body">Call me babe, need you now !!!</p>
             </div>
             <div class="d-flex justify-content-center py-1">
-               <img src="/cars/33119.jpg" class="img-fluid" alt="...">
+               <img src="/img/IMG-20220322-WA0010.jpg" class="img-fluid" alt="...">
             </div>
           </div>
           <div class="card-footer mt-4 py-3 border-top" style="background-color:white; border:none">
@@ -695,13 +695,13 @@
                   <div class="preview-list">
                       <div class="preview-item">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face6.jpg" alt="image" class="rounded-circle" />
+                          <img src="/assets/images/faces/face10.jpg" alt="image" class="rounded-circle" />
                          <div class="active"></div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
                             <div class="d-flex d-md-block d-xl-flex justify-content-between">
-                              <h6 class="preview-subject p-user-name">Silas Udofia</h6>
+                              <h6 class="preview-subject p-user-name">Micky Ashanti</h6>
                             </div>
                             <span class="badge rounded-pill bg-primary">2 days ago</span>
                             <p class="text-muted p-card-header mt-2">Well, it seems to be working now.</p>
@@ -713,10 +713,10 @@
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
-              <p class="p-card-body">Nature is amazing</p>
+              <p class="p-card-body">Just me and you all night</p>
             </div>
             <div class="d-flex justify-content-center py-1">
-               <img src="/cars/33120.jpg" class="img-fluid" alt="...">
+               <img src="/img/IMG-20220322-WA0003.jpg" class="img-fluid" alt="...">
             </div>
           </div>
           <div class="card-footer mt-4 py-3 border-top" style="background-color:white; border:none">
@@ -750,13 +750,13 @@
                   <div class="preview-list">
                       <div class="preview-item">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face6.jpg" alt="image" class="rounded-circle" />
+                          <img src="/assets/images/faces/face11.jpg" alt="image" class="rounded-circle" />
                          <div class="active"></div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
                             <div class="d-flex d-md-block d-xl-flex justify-content-between">
-                              <h6 class="preview-subject p-user-name">Silas Udofia</h6>
+                              <h6 class="preview-subject p-user-name">Alan Walker</h6>
                             </div>
                             <span class="badge rounded-pill bg-primary">2 days ago</span>
                             <p class="text-muted p-card-header mt-2">Well, it seems to be working now.</p>
@@ -768,10 +768,10 @@
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
-              <p class="p-card-body">Nature is amazing</p>
+              <p class="p-card-body">Need you  in the middle now babe !</p>
             </div>
             <div class="d-flex justify-content-center py-1">
-               <img src="/cars/33130.jpg" class="img-fluid" alt="...">
+               <img src="/img/IMG-20220322-WA0011.jpg" class="img-fluid" alt="...">
             </div>
           </div>
           <div class="card-footer mt-4 py-3 border-top" style="background-color:white; border:none">
@@ -804,13 +804,13 @@
                   <div class="preview-list">
                       <div class="preview-item">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face6.jpg" alt="image" class="rounded-circle" />
+                          <img src="/assets/images/faces/face12.jpg" alt="image" class="rounded-circle" />
                          <div class="active"></div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
                             <div class="d-flex d-md-block d-xl-flex justify-content-between">
-                              <h6 class="preview-subject p-user-name">Silas Udofia</h6>
+                              <h6 class="preview-subject p-user-name">Jerry Dick</h6>
                             </div>
                             <span class="badge rounded-pill bg-primary">2 days ago</span>
                             <p class="text-muted p-card-header mt-2">Well, it seems to be working now.</p>
@@ -822,10 +822,10 @@
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
-              <p class="p-card-body">Nature is amazing</p>
+              <p class="p-card-body">Badass girlfrind killing it !</p>
             </div>
             <div class="d-flex justify-content-center py-1">
-               <img src="/cars/33154.jpg" class="img-fluid" alt="...">
+               <img src="/img/IMG-20220322-WA0004.jpg" class="img-fluid" alt="...">
             </div>
           </div>
           <div class="card-footer mt-4 py-3 border-top" style="background-color:white; border:none">
@@ -858,13 +858,13 @@
                   <div class="preview-list">
                       <div class="preview-item">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face6.jpg" alt="image" class="rounded-circle" />
+                          <img src="/assets/images/faces/face13.jpg" alt="image" class="rounded-circle" />
                          <div class="active"></div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
                             <div class="d-flex d-md-block d-xl-flex justify-content-between">
-                              <h6 class="preview-subject p-user-name">Silas Udofia</h6>
+                              <h6 class="preview-subject p-user-name">Thanos Hacky</h6>
                             </div>
                             <span class="badge rounded-pill bg-primary">2 days ago</span>
                             <p class="text-muted p-card-header mt-2">Well, it seems to be working now.</p>
@@ -876,10 +876,10 @@
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
-              <p class="p-card-body">Nature is amazing</p>
+              <p class="p-card-body">Sexy latina, fricky hot !</p>
             </div>
             <div class="d-flex justify-content-center py-1">
-               <img src="/cars/33155.jpg" class="img-fluid" alt="...">
+               <img src="/img/IMG-20220322-WA0005.jpg" class="img-fluid" alt="...">
             </div>
           </div>
           <div class="card-footer mt-4 py-3 border-top" style="background-color:white; border:none">
