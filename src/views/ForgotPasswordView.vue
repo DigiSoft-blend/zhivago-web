@@ -26,7 +26,7 @@
     <div class="text-muted mb-1 mt-2 d-flex justify-content-between pt-1">
     
     </div>
-    <button class="w-100 btn btn-lg btn-primary zbtn" type="submit">Continue</button>
+    <button class="w-100 btn btn-lg btn-primary zbtn btn-grad" type="submit">Continue</button>
     <div class="text-center p-2">
       <span>Or go back to</span>  <router-link to="/login"> Log in</router-link> 
     </div>

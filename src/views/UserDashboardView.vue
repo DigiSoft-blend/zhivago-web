@@ -296,9 +296,11 @@
             <p class="Trend-text px-1 mt-3 text-muted p-trending-post">Trending Posts</p>
                  <div class="preview-list">
                       <div class="preview-item">
+                        <div class="img-div">
                         <div class="preview-thumbnail">
                           <img src="/assets/images/faces/face2.jpg" alt="image" class="rounded-circle status" />
                           <div class="active"></div>
+                          </div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
@@ -314,9 +316,11 @@
           <li class="nav-item">
               <div class="preview-list">
                       <div class="preview-item">
+                         <div class="img-div">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face4.jpg" alt="image" class="rounded-circle" />
+                          <img src="/assets/images/faces/face4.jpg" alt="image" class="rounded-circle status" />
                           <div class="active"></div>
+                          </div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
@@ -334,9 +338,11 @@
           <li class="nav-item">
               <div class="preview-list">
                       <div class="preview-item">
+                        <div class="img-div">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face8.jpg" alt="image" class="rounded-circle" />
+                          <img src="/assets/images/faces/face8.jpg" alt="image" class="rounded-circle status" />
                           <div class="active"></div>
+                          </div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
@@ -373,7 +379,7 @@
   <div class="main-view col-md-6  container bg-light">
     <div class="row content gy-2">
 
-      <div class="card card1 bg-light p-0 m-0  px-3">
+      <div class="card card1 bg-light p-0 m-0  px-3 mt-3">
         <div class="card-body bg-light p-0 m-0">
           <div class="d-flex flex-row justify-content-between mt-3">
             <h4 class="card-title">Home</h4>
@@ -423,8 +429,10 @@
                   <div class="preview-list">
                       <div class="preview-item">
                         <div class="preview-thumbnail">
+                          <div class="img-div">
                           <img src="/assets/images/faces/face15.jpg" alt="image" class="rounded-circle status" />
                           <div class="active"></div>
+                          </div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
@@ -477,9 +485,11 @@
             <div class="card-header  d-flex  d-xl-flex justify-content-between p-0 m-0 px-3">
                   <div class="preview-list">
                       <div class="preview-item">
+                         <div class="img-div">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face2.jpg" alt="image" class="rounded-circle" />
+                          <img src="/assets/images/faces/face2.jpg" alt="image" class="rounded-circle status" />
                          <div class="active"></div>
+                         </div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
@@ -531,9 +541,11 @@
             <div class="card-header  d-flex  d-xl-flex justify-content-between p-0 m-0 px-3">
                   <div class="preview-list">
                       <div class="preview-item">
+                         <div class="img-div">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face4.jpg" alt="image" class="rounded-circle" />
+                          <img src="/assets/images/faces/face4.jpg" alt="image" class="rounded-circle status" />
                          <div class="active"></div>
+                         </div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
@@ -584,9 +596,11 @@
             <div class="card-header  d-flex  d-xl-flex justify-content-between">
                   <div class="preview-list">
                       <div class="preview-item">
+                        <div class="img-div">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face7.jpg" alt="image" class="rounded-circle" />
+                          <img src="/assets/images/faces/face7.jpg" alt="image" class="rounded-circle status" />
                          <div class="active"></div>
+                         </div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
@@ -639,9 +653,11 @@
             <div class="card-header  d-flex  d-xl-flex justify-content-between">
                   <div class="preview-list">
                       <div class="preview-item">
+                        <div class="img-div">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face8.jpg" alt="image" class="rounded-circle" />
+                          <img src="/assets/images/faces/face8.jpg" alt="image" class="rounded-circle status" />
                          <div class="active"></div>
+                         </div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
@@ -694,9 +710,11 @@
             <div class="card-header  d-flex  d-xl-flex justify-content-between">
                   <div class="preview-list">
                       <div class="preview-item">
+                         <div class="img-div">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face10.jpg" alt="image" class="rounded-circle" />
+                          <img src="/assets/images/faces/face10.jpg" alt="image" class="rounded-circle status" />
                          <div class="active"></div>
+                         </div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
@@ -749,9 +767,11 @@
             <div class="card-header  d-flex  d-xl-flex justify-content-between">
                   <div class="preview-list">
                       <div class="preview-item">
+                         <div class="img-div">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face11.jpg" alt="image" class="rounded-circle" />
+                          <img src="/assets/images/faces/face11.jpg" alt="image" class="rounded-circle status" />
                          <div class="active"></div>
+                         </div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
@@ -803,9 +823,11 @@
             <div class="card-header  d-flex  d-xl-flex justify-content-between">
                   <div class="preview-list">
                       <div class="preview-item">
+                        <div class="img-div">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face12.jpg" alt="image" class="rounded-circle" />
+                          <img src="/assets/images/faces/face12.jpg" alt="image" class="rounded-circle status" />
                          <div class="active"></div>
+                         </div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">
@@ -857,9 +879,11 @@
             <div class="card-header  d-flex  d-xl-flex justify-content-between">
                   <div class="preview-list">
                       <div class="preview-item">
+                        <div class="img-div">
                         <div class="preview-thumbnail">
-                          <img src="/assets/images/faces/face13.jpg" alt="image" class="rounded-circle" />
+                          <img src="/assets/images/faces/face13.jpg" alt="image" class="rounded-circle status" />
                          <div class="active"></div>
+                         </div>
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                           <div class="flex-grow">

@@ -38,7 +38,7 @@
          <p>Lost Password ?</p>
       </router-link>
     </div>
-    <button class="w-100 btn btn-lg btn-primary zbtn" type="submit">Sign in</button>
+    <button class="w-100 btn btn-lg btn-primary zbtn btn-grad" type="submit">Sign in</button>
     <div class="text-center p-2">
        <router-link to="/register">Create an account</router-link> 
     </div>

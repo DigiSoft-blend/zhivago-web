@@ -46,7 +46,7 @@
     <!-- <router-link to="/profileentry">
          <p class="w-100 btn btn-lg btn-primary zbtn mt-4">Continue</p>
     </router-link> -->
-    <button  @click="btn"  class="w-100 btn btn-lg btn-primary zbtn">Continue</button>
+    <button  @click="btn"  class="w-100 btn btn-lg btn-primary zbtn btn-grad">Continue</button>
     <div class="text-center p-2">
        <span> Have an account ?</span> <router-link to="/login">Log in</router-link>
     </div>
@@ -70,7 +70,7 @@
        </div>
     
  
-    <div class="text-muted mb-1 mt-1 px-4" style="font-size:14px">
+    <div class="text-muted mb-1 mt-1 px-1" style="font-size:14px">
       <p class="text-muted p-0 mb-2  ">Registration Type (required)</p>
      
       <input class="mr-2" type="checkbox" id="talent" value="Talent" v-model="checkedUserType">
@@ -85,7 +85,7 @@
  
      
     
-    <button  class="w-100 btn btn-lg btn-primary zbtn" type="submit">Complete Sign Up</button>
+    <button  class="w-100 btn btn-lg btn-primary zbtn btn-grad" type="submit">Complete Sign Up</button>
    </section>
    
   </form>
