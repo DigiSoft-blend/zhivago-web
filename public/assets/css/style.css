@@ -20,9 +20,9 @@ li :hover{
  background-image: url('/assets/images/carousel/banner_8.jpg');
 }
 
-.advert2{
+/* .advert2{
 
-}
+} */
 
 
 .navbar-toggler{
@@ -205,7 +205,7 @@ overflow-x: hidden;
 
 
 .sidebar-right{
-  margin-top: 16px;
+  margin-top: 70px;
   height: 100vh;
   position: fixed;
   top: 0;
