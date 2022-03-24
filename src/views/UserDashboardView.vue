@@ -26,7 +26,7 @@
      
        <img class="navbar-brand logo mx-4" src="/assets/images/zhivago-logo.png" alt="logo" />
 
-          <form style="margin-left:38px">
+          <form>
              <div class="search">
                <input class="nav-form-input form-control" type="text" placeholder="Search" aria-label="Search">
                <i class="mdi mdi-magnify icon"></i> 
@@ -283,12 +283,12 @@
       </div> -->
 
       <div class="side-menu g-col-3 g-col-md-3 position-sticky pt-5">
-           <button class="btn btn-primary w-100 text-white text-left d-flex align-items-center py-2"><span class="iconify me-2" style="color: #fff;" data-icon="bytesize:home"></span>Home</button>
+           <button class="btn btn-primary w-100 text-white fw-normal text-left d-flex align-items-center py-2"><span class="iconify me-2" style="color: #fff;" data-icon="bytesize:home"></span>Home</button>
            <div class="side-menu-list-parent">
 
              <div class="side-menu-list member">
                <p>
-                 <span class="iconify text-black-50 fw-bolder me-2" data-icon="eva:arrow-right-fill" href="#collapseExample" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample"></span>
+                 <span class="iconify text-black-50 fw-bolder me-2" data-icon="eva:arrow-right-fill" href="#collapseExample" data-mdb-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample"></span>
                  <a href="" class="fw-normal">Members Central</a>               
                </p>
                
@@ -300,7 +300,7 @@
 
              <div class="side-menu-list vip-group">
                <p>
-                 <span class="iconify text-black-50 fw-bolder me-2" data-icon="eva:arrow-right-fill" href="#collapseExample2" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample2"></span>
+                 <span class="iconify text-black-50 fw-bolder me-2" data-icon="eva:arrow-right-fill" href="#collapseExample2" data-mdb-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample2"></span>
                  <a href="" class="fw-normal">VIP GROUPS</a>
                  <span type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Create a space">
                   <span class="iconify text-dark-50" style="font-size: 1rem;" data-icon="carbon:add-alt"></span>
@@ -314,7 +314,7 @@
 
              <div class="side-menu-list vip-group">
                <p>
-                 <span class="iconify text-black-50 fw-bolder me-2" data-icon="eva:arrow-right-fill" href="#collapseExample3" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample3"></span>
+                 <span class="iconify text-black-50 fw-bolder me-2" data-icon="eva:arrow-right-fill" href="#collapseExample3" data-mdb-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample3"></span>
                  <a href="" class="fw-normal">Admins</a>
                </p>
                <div class="member_collapsed collapse" id="collapseExample3">
@@ -498,7 +498,31 @@
                         </div>
                       </div>
                  </div>
-                  <p class="text-muted mt-2 small p-share p-1">Share</p>
+                  <p class="text-muted mt-2 small p-share p-1 position-relative">
+                     <a href="" class="sharebtn hover mx-3">Share</a>
+                     <span class="iconify text-muted hover" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                  </p>
+                  <div v-if="false" class="share-post d-flex justify-content-between position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <div>
+                    <a href=""><p>Share to web</p></a>
+                    <small class="text-muted">This post is Public.</small>
+                  </div>
+                  <button class="btn btn-outline-gray ">Copy link</button>
+                </div>
+                <div v-if="false" class="post-option position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <a href="#"><div>
+                    <p>Edit post</p>
+                    <small class="text-muted">Make changes to this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Unfollow post</p>
+                    <small class="text-muted">Turn off notifications for this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Delete post</p>
+                    <small class="text-muted">Permanently delete this post</small>
+                  </div></a>
+                </div>
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
@@ -512,14 +536,12 @@
                <div class="row row-footer">
                  <div class="col-4">
                     <div class="col-12 footer-div">
-                      <i class="mdi mdi-thumb-up-outline"></i>
-                      <p>7m</p>
+                      <a href="" class="likebtn d-flex align-items-center"><span class="iconify" data-icon="fa-regular:thumbs-up"></span>Like</a>
                     </div>
                  </div>
                  <div class="col-4">
                      <div class="col-12 footer-div">
-                      <i class="mdi mdi-message-outline"></i>
-                      <p>12</p>
+                      <a class="flex-grow-1 ps-3 commentbtn d-flex align-items-center" data-mdb-toggle="collapse" href="#col1" role="button" aria-expanded="false" aria-controls="col1"><span class="iconify me-2" data-icon="bx:message"></span>Comment</a>
                      </div>
                  </div>
                  <div class="col-4">
@@ -529,6 +551,52 @@
                     </div>
                  </div>
                </div>
+          </div>
+
+               <!-- comment section -->
+          <div class="collapse comment-section" id="col1">
+            <div class="comment-text text-center py-3 border-bottom border-gray">
+              <div class="individual-comment-parent">
+                <div class="individual-comment d-flex justify-content-between align-items-start">
+                  <div class="profileImg overflow-hidden rounded-circle me-4">
+                    <img src="/assets/images/faces/face4.jpg" alt="" class="w-100">
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between">
+                      <span class="fw-normal">Junior Sam</span>
+                      <span class="text-muted flex-grow-1 ms-3 text-left" style="font-size: 0.8rem;">a month ago</span>
+                      <span class="iconify text-muted hover me-2" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                    </div>
+                    <p class="my-2 text-start">Thanks alot, this was very helpful</p>
+                    <div class="my-1 text-start">
+                       <span class="commentbtn ms-2">Reply</span>
+                       <span class="commentbtn ms-2">Like</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="show-comment justify-content-around m-auto">
+                <button type="button" class="btn btn-outline-dark">Show more comment</button>
+              </div>
+            </div>
+            <div class="newcomment d-flex justify-content-between align-items-start py-3 pe-3">
+               <div class="profileImg overflow-hidden rounded-circle me-4">
+                  <img src="/assets/images/faces/face4.jpg" alt="" class="w-100">
+                </div>
+                <div class="flex-grow-1 border-gray border rounded p-3">
+                  <input type="text" id="#col1-input" placeholder="What are your thoughts?" class="new-comment-input text-break w-100 p-2">
+                  <div class="d-flex justify-content-between mt-2">
+                    <span>
+                      <span class="iconify me-2 text-muted" style="font-size: 1.3rem;" data-icon="akar-icons:video"></span>
+                      <span class="iconify me-2 text-muted" style="font-size: 1.3rem;" data-icon="bi:image"></span>
+                      <span class="iconify me-2 text-muted" style="font-size: 1.3rem;" data-icon="fluent:gif-20-regular"></span>
+                      <span class="iconify me-2 text-muted" style="font-size: 1.3rem;" data-icon="fluent:emoji-28-regular"></span>
+                      <span class="iconify me-2 text-muted" style="font-size: 1.3rem;" data-icon="teenyicons:attach-solid"></span>
+                    </span>
+                    <button class="btn btn-primary px-4 py-2 fw-normal">Post</button>
+                  </div>
+                </div>
+            </div>
           </div>
 
               <!-- advertisement -->
@@ -573,7 +641,31 @@
                         </div>
                       </div>
                  </div>
-                  <p class="text-muted mt-2 small p-share p-1">Share</p>
+                  <p class="text-muted mt-2 small p-share p-1 position-relative">
+                     <a href="" class="sharebtn hover mx-3">Share</a>
+                     <span class="iconify text-muted hover" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                  </p>
+                  <div v-if="false" class="share-post d-flex justify-content-between position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <div>
+                    <a href=""><p>Share to web</p></a>
+                    <small class="text-muted">This post is Public.</small>
+                  </div>
+                  <button class="btn btn-outline-gray ">Copy link</button>
+                </div>
+                <div v-if="false" class="post-option position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <a href="#"><div>
+                    <p>Edit post</p>
+                    <small class="text-muted">Make changes to this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Unfollow post</p>
+                    <small class="text-muted">Turn off notifications for this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Delete post</p>
+                    <small class="text-muted">Permanently delete this post</small>
+                  </div></a>
+                </div>
           </div>
           <div class="card-body m-0 p-0">
              <div class="mx-3">
@@ -587,14 +679,12 @@
                <div class="row row-footer">
                   <div class="col-4">
                     <div class="col-12 footer-div">
-                      <i class="mdi mdi-thumb-up-outline"></i>
-                      <p>10k</p>
+                      <a href="" class="likebtn d-flex align-items-center"><span class="iconify" data-icon="fa-regular:thumbs-up"></span>Like</a>
                     </div>
                  </div>
                  <div class="col-4">
                      <div class="col-12 footer-div">
-                      <i class="mdi mdi-message-outline"></i>
-                      <p>12</p>
+                      <a class="flex-grow-1 ps-3 commentbtn d-flex align-items-center" data-mdb-toggle="collapse" href="#col2" role="button" aria-expanded="false" aria-controls="col2"><span class="iconify me-2" data-icon="bx:message"></span>Comment</a>
                      </div>
                  </div>
                  <div class="col-4">
@@ -605,6 +695,53 @@
                  </div>
                </div>
           </div>
+
+          <!-- comment section -->
+          <div class="collapse comment-section" id="col2">
+            <div class="comment-text text-center py-3 border-bottom border-gray">
+              <div class="individual-comment-parent">
+                <div class="individual-comment d-flex justify-content-between align-items-start">
+                  <div class="profileImg overflow-hidden rounded-circle me-4">
+                    <img src="/assets/images/faces/face4.jpg" alt="" class="w-100">
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between">
+                      <span class="fw-normal">Junior Sam</span>
+                      <span class="text-muted flex-grow-1 ms-3 text-left" style="font-size: 0.8rem;">a month ago</span>
+                      <span class="iconify text-muted hover me-2" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                    </div>
+                    <p class="my-2 text-start">Thanks alot, this was very helpful</p>
+                    <div class="my-1 text-start">
+                       <span class="commentbtn ms-2">Reply</span>
+                       <span class="commentbtn ms-2">Like</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="show-comment justify-content-around m-auto">
+                <button type="button" class="btn btn-outline-dark">Show more comment</button>
+              </div>
+            </div>
+            <div class="newcomment d-flex justify-content-between align-items-start py-3 pe-3">
+               <div class="profileImg overflow-hidden rounded-circle me-4">
+                  <img src="/assets/images/faces/face4.jpg" alt="" class="w-100">
+                </div>
+                <div class="flex-grow-1 border-gray border rounded p-3">
+                  <input type="text" id="#col1-input" placeholder="What are your thoughts?" class="new-comment-input text-break w-100 p-2">
+                  <div class="d-flex justify-content-between mt-2">
+                    <span>
+                      <span class="iconify me-2 text-muted" style="font-size: 1.3rem;" data-icon="akar-icons:video"></span>
+                      <span class="iconify me-2 text-muted" style="font-size: 1.3rem;" data-icon="bi:image"></span>
+                      <span class="iconify me-2 text-muted" style="font-size: 1.3rem;" data-icon="fluent:gif-20-regular"></span>
+                      <span class="iconify me-2 text-muted" style="font-size: 1.3rem;" data-icon="fluent:emoji-28-regular"></span>
+                      <span class="iconify me-2 text-muted" style="font-size: 1.3rem;" data-icon="teenyicons:attach-solid"></span>
+                    </span>
+                    <button class="btn btn-primary px-4 py-2 fw-normal">Post</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+
                   <!-- advertisement -->
               <div class="card text-center p-0 mt-2 mb-4">
             <em>-advertisement-</em>
@@ -647,7 +784,31 @@
                         </div>
                       </div>
                  </div>
-                  <p class="text-muted mt-2 small p-share p-1">Share</p>
+                  <p class="text-muted mt-2 small p-share p-1 position-relative">
+                     <a href="" class="sharebtn hover mx-3">Share</a>
+                     <span class="iconify text-muted hover" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                  </p>
+                  <div v-if="false" class="share-post d-flex justify-content-between position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <div>
+                    <a href=""><p>Share to web</p></a>
+                    <small class="text-muted">This post is Public.</small>
+                  </div>
+                  <button class="btn btn-outline-gray ">Copy link</button>
+                </div>
+                <div v-if="false" class="post-option position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <a href="#"><div>
+                    <p>Edit post</p>
+                    <small class="text-muted">Make changes to this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Unfollow post</p>
+                    <small class="text-muted">Turn off notifications for this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Delete post</p>
+                    <small class="text-muted">Permanently delete this post</small>
+                  </div></a>
+                </div>
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
@@ -661,14 +822,12 @@
                <div class="row row-footer">
                   <div class="col-4">
                     <div class="col-12 footer-div">
-                      <i class="mdi mdi-thumb-up-outline"></i>
-                      <p>20k</p>
+                      <a href="" class="likebtn d-flex align-items-center"><span class="iconify" data-icon="fa-regular:thumbs-up"></span>Like</a>
                     </div>
                  </div>
                  <div class="col-4">
                      <div class="col-12 footer-div">
-                      <i class="mdi mdi-message-outline"></i>
-                      <p>12</p>
+                      <a class="flex-grow-1 ps-3 commentbtn d-flex align-items-center" data-mdb-toggle="collapse" href="#col3" role="button" aria-expanded="false" aria-controls="col3"><span class="iconify me-2" data-icon="bx:message"></span>Comment</a>
                      </div>
                  </div>
                  <div class="col-4">
@@ -679,6 +838,53 @@
                  </div>
                </div>
           </div>
+
+          <!-- comment section -->
+          <div class="collapse comment-section" id="col3">
+            <div class="comment-text text-center py-3 border-bottom border-gray">
+              <div class="individual-comment-parent">
+                <div class="individual-comment d-flex justify-content-between align-items-start">
+                  <div class="profileImg overflow-hidden rounded-circle me-4">
+                    <img src="/assets/images/faces/face4.jpg" alt="" class="w-100">
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between">
+                      <span class="fw-normal">Junior Sam</span>
+                      <span class="text-muted flex-grow-1 ms-3 text-left" style="font-size: 0.8rem;">a month ago</span>
+                      <span class="iconify text-muted hover me-2" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                    </div>
+                    <p class="my-2 text-start">Thanks alot, this was very helpful</p>
+                    <div class="my-1 text-start">
+                       <span class="commentbtn ms-2">Reply</span>
+                       <span class="commentbtn ms-2">Like</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="show-comment justify-content-around m-auto">
+                <button type="button" class="btn btn-outline-dark">Show more comment</button>
+              </div>
+            </div>
+            <div class="newcomment d-flex justify-content-between align-items-start py-3 pe-3">
+               <div class="profileImg overflow-hidden rounded-circle me-4">
+                  <img src="/assets/images/faces/face4.jpg" alt="" class="w-100">
+                </div>
+                <div class="flex-grow-1 border-gray border rounded p-3">
+                  <input type="text" id="#col1-input" placeholder="What are your thoughts?" class="new-comment-input text-break w-100 p-2">
+                  <div class="d-flex justify-content-between mt-2">
+                    <span>
+                      <span class="iconify me-2 text-muted" style="font-size: 1.3rem;" data-icon="akar-icons:video"></span>
+                      <span class="iconify me-2 text-muted" style="font-size: 1.3rem;" data-icon="bi:image"></span>
+                      <span class="iconify me-2 text-muted" style="font-size: 1.3rem;" data-icon="fluent:gif-20-regular"></span>
+                      <span class="iconify me-2 text-muted" style="font-size: 1.3rem;" data-icon="fluent:emoji-28-regular"></span>
+                      <span class="iconify me-2 text-muted" style="font-size: 1.3rem;" data-icon="teenyicons:attach-solid"></span>
+                    </span>
+                    <button class="btn btn-primary px-4 py-2 fw-normal">Post</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+
               <!-- advertisement -->
           <div class="card text-center p-0 mt-2 mb-4">
         <em>-advertisement-</em>
@@ -720,7 +926,31 @@
                         </div>
                       </div>
                  </div>
-                  <p class="text-muted mt-2 small p-share p-1">Share</p>
+                  <p class="text-muted mt-2 small p-share p-1 position-relative">
+                     <a href="" class="sharebtn hover mx-3">Share</a>
+                     <span class="iconify text-muted hover" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                  </p>
+                  <div v-if="false" class="share-post d-flex justify-content-between position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <div>
+                    <a href=""><p>Share to web</p></a>
+                    <small class="text-muted">This post is Public.</small>
+                  </div>
+                  <button class="btn btn-outline-gray ">Copy link</button>
+                </div>
+                <div v-if="false" class="post-option position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <a href="#"><div>
+                    <p>Edit post</p>
+                    <small class="text-muted">Make changes to this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Unfollow post</p>
+                    <small class="text-muted">Turn off notifications for this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Delete post</p>
+                    <small class="text-muted">Permanently delete this post</small>
+                  </div></a>
+                </div>
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
@@ -734,14 +964,12 @@
                <div class="row row-footer">
                   <div class="col-4">
                     <div class="col-12 footer-div">
-                      <i class="mdi mdi-thumb-up-outline"></i>
-                      <p>3k</p>
+                      <a href="" class="likebtn d-flex align-items-center"><span class="iconify" data-icon="fa-regular:thumbs-up"></span>Like</a>
                     </div>
                  </div>
                  <div class="col-4">
                      <div class="col-12 footer-div">
-                      <i class="mdi mdi-message-outline"></i>
-                      <p>12</p>
+                      <a class="flex-grow-1 ps-3 commentbtn d-flex align-items-center" data-mdb-toggle="collapse" href="#col4" role="button" aria-expanded="false" aria-controls="col4"><span class="iconify me-2" data-icon="bx:message"></span>Comment</a>
                      </div>
                  </div>
                  <div class="col-4">
@@ -752,6 +980,53 @@
                  </div>
                </div>
           </div>
+
+          <!-- comment section -->
+          <div class="collapse comment-section" id="col4">
+            <div class="comment-text text-center py-3 border-bottom border-gray">
+              <div class="individual-comment-parent">
+                <div class="individual-comment d-flex justify-content-between align-items-start">
+                  <div class="profileImg overflow-hidden rounded-circle me-4">
+                    <img src="/assets/images/faces/face4.jpg" alt="" class="w-100">
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between">
+                      <span class="fw-normal">Junior Sam</span>
+                      <span class="text-muted flex-grow-1 ms-3 text-left" style="font-size: 0.8rem;">a month ago</span>
+                      <span class="iconify text-muted hover me-2" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                    </div>
+                    <p class="my-2 text-start">Thanks alot, this was very helpful</p>
+                    <div class="my-1 text-start">
+                       <span class="commentbtn ms-2">Reply</span>
+                       <span class="commentbtn ms-2">Like</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="show-comment justify-content-around m-auto">
+                <button type="button" class="btn btn-outline-dark">Show more comment</button>
+              </div>
+            </div>
+            <div class="newcomment d-flex justify-content-between align-items-start py-3 pe-3">
+               <div class="profileImg overflow-hidden rounded-circle me-4">
+                  <img src="/assets/images/faces/face4.jpg" alt="" class="w-100">
+                </div>
+                <div class="flex-grow-1 border-gray border rounded p-3">
+                  <input type="text" id="#col1-input" placeholder="What are your thoughts?" class="new-comment-input text-break w-100 p-2">
+                  <div class="d-flex justify-content-between mt-2">
+                    <span>
+                      <span class="iconify me-2 text-muted" style="font-size: 1.3rem;" data-icon="akar-icons:video"></span>
+                      <span class="iconify me-2 text-muted" style="font-size: 1.3rem;" data-icon="bi:image"></span>
+                      <span class="iconify me-2 text-muted" style="font-size: 1.3rem;" data-icon="fluent:gif-20-regular"></span>
+                      <span class="iconify me-2 text-muted" style="font-size: 1.3rem;" data-icon="fluent:emoji-28-regular"></span>
+                      <span class="iconify me-2 text-muted" style="font-size: 1.3rem;" data-icon="teenyicons:attach-solid"></span>
+                    </span>
+                    <button class="btn btn-primary px-4 py-2 fw-normal">Post</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+
            
               <!-- adveertisement -->
 
@@ -797,7 +1072,31 @@
                         </div>
                       </div>
                  </div>
-                  <p class="text-muted mt-2 small p-share p-1">Share</p>
+                  <p class="text-muted mt-2 small p-share p-1 position-relative">
+                     <a href="" class="sharebtn hover mx-3">Share</a>
+                     <span class="iconify text-muted hover" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                  </p>
+                  <div v-if="false" class="share-post d-flex justify-content-between position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <div>
+                    <a href=""><p>Share to web</p></a>
+                    <small class="text-muted">This post is Public.</small>
+                  </div>
+                  <button class="btn btn-outline-gray ">Copy link</button>
+                </div>
+                <div v-if="false" class="post-option position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <a href="#"><div>
+                    <p>Edit post</p>
+                    <small class="text-muted">Make changes to this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Unfollow post</p>
+                    <small class="text-muted">Turn off notifications for this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Delete post</p>
+                    <small class="text-muted">Permanently delete this post</small>
+                  </div></a>
+                </div>
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
@@ -811,14 +1110,12 @@
                <div class="row row-footer">
                   <div class="col-4">
                     <div class="col-12 footer-div">
-                      <i class="mdi mdi-thumb-up-outline"></i>
-                      <p>3k</p>
+                      <a href="" class="likebtn d-flex align-items-center"><span class="iconify" data-icon="fa-regular:thumbs-up"></span>Like</a>
                     </div>
                  </div>
                  <div class="col-4">
                      <div class="col-12 footer-div">
-                      <i class="mdi mdi-message-outline"></i>
-                      <p>12</p>
+                      <a class="flex-grow-1 ps-3 commentbtn d-flex align-items-center" data-mdb-toggle="collapse" href="#col5" role="button" aria-expanded="false" aria-controls="col5"><span class="iconify me-2" data-icon="bx:message"></span>Comment</a>
                      </div>
                  </div>
                  <div class="col-4">
@@ -872,7 +1169,31 @@
                         </div>
                       </div>
                  </div>
-                  <p class="text-muted mt-2 small p-share p-1">Share</p>
+                  <p class="text-muted mt-2 small p-share p-1 position-relative">
+                     <a href="" class="sharebtn hover mx-3">Share</a>
+                     <span class="iconify text-muted hover" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                  </p>
+                  <div v-if="false" class="share-post d-flex justify-content-between position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <div>
+                    <a href=""><p>Share to web</p></a>
+                    <small class="text-muted">This post is Public.</small>
+                  </div>
+                  <button class="btn btn-outline-gray ">Copy link</button>
+                </div>
+                <div v-if="false" class="post-option position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <a href="#"><div>
+                    <p>Edit post</p>
+                    <small class="text-muted">Make changes to this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Unfollow post</p>
+                    <small class="text-muted">Turn off notifications for this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Delete post</p>
+                    <small class="text-muted">Permanently delete this post</small>
+                  </div></a>
+                </div>
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
@@ -886,14 +1207,12 @@
                <div class="row row-footer">
                   <div class="col-4">
                     <div class="col-12 footer-div">
-                      <i class="mdi mdi-thumb-up-outline"></i>
-                      <p>3k</p>
+                      <a href="" class="likebtn d-flex align-items-center"><span class="iconify" data-icon="fa-regular:thumbs-up"></span>Like</a>
                     </div>
                  </div>
                  <div class="col-4">
                      <div class="col-12 footer-div">
-                      <i class="mdi mdi-message-outline"></i>
-                      <p>12</p>
+                      <a class="flex-grow-1 ps-3 commentbtn d-flex align-items-center" data-mdb-toggle="collapse" href="#col6" role="button" aria-expanded="false" aria-controls="col6"><span class="iconify me-2" data-icon="bx:message"></span>Comment</a>
                      </div>
                  </div>
                  <div class="col-4">
@@ -948,7 +1267,31 @@
                         </div>
                       </div>
                  </div>
-                  <p class="text-muted mt-2 small p-share p-1">Share</p>
+                  <p class="text-muted mt-2 small p-share p-1 position-relative">
+                     <a href="" class="sharebtn hover mx-3">Share</a>
+                     <span class="iconify text-muted hover" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                  </p>
+                  <div v-if="false" class="share-post d-flex justify-content-between position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <div>
+                    <a href=""><p>Share to web</p></a>
+                    <small class="text-muted">This post is Public.</small>
+                  </div>
+                  <button class="btn btn-outline-gray ">Copy link</button>
+                </div>
+                <div v-if="false" class="post-option position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <a href="#"><div>
+                    <p>Edit post</p>
+                    <small class="text-muted">Make changes to this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Unfollow post</p>
+                    <small class="text-muted">Turn off notifications for this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Delete post</p>
+                    <small class="text-muted">Permanently delete this post</small>
+                  </div></a>
+                </div>
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
@@ -962,14 +1305,12 @@
                <div class="row row-footer">
                   <div class="col-4">
                     <div class="col-12 footer-div">
-                      <i class="mdi mdi-thumb-up-outline"></i>
-                      <p>3k</p>
+                      <a href="" class="likebtn d-flex align-items-center"><span class="iconify" data-icon="fa-regular:thumbs-up"></span>Like</a>
                     </div>
                  </div>
                  <div class="col-4">
                      <div class="col-12 footer-div">
-                      <i class="mdi mdi-message-outline"></i>
-                      <p>12</p>
+                      <a class="flex-grow-1 ps-3 commentbtn d-flex align-items-center" data-mdb-toggle="collapse" href="#col7" role="button" aria-expanded="false" aria-controls="col7"><span class="iconify me-2" data-icon="bx:message"></span>Comment</a>
                      </div>
                  </div>
                  <div class="col-4">
@@ -1022,7 +1363,31 @@
                         </div>
                       </div>
                  </div>
-                  <p class="text-muted mt-2 small p-share p-1">Share</p>
+                  <p class="text-muted mt-2 small p-share p-1 position-relative">
+                     <a href="" class="sharebtn hover mx-3">Share</a>
+                     <span class="iconify text-muted hover" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                  </p>
+                  <div v-if="false" class="share-post d-flex justify-content-between position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <div>
+                    <a href=""><p>Share to web</p></a>
+                    <small class="text-muted">This post is Public.</small>
+                  </div>
+                  <button class="btn btn-outline-gray ">Copy link</button>
+                </div>
+                <div v-if="false" class="post-option position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <a href="#"><div>
+                    <p>Edit post</p>
+                    <small class="text-muted">Make changes to this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Unfollow post</p>
+                    <small class="text-muted">Turn off notifications for this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Delete post</p>
+                    <small class="text-muted">Permanently delete this post</small>
+                  </div></a>
+                </div>
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
@@ -1036,14 +1401,12 @@
                <div class="row row-footer">
                   <div class="col-4">
                     <div class="col-12 footer-div">
-                      <i class="mdi mdi-thumb-up-outline"></i>
-                      <p>3k</p>
+                      <a href="" class="likebtn d-flex align-items-center"><span class="iconify" data-icon="fa-regular:thumbs-up"></span>Like</a>
                     </div>
                  </div>
                  <div class="col-4">
                      <div class="col-12 footer-div">
-                      <i class="mdi mdi-message-outline"></i>
-                      <p>12</p>
+                      <a class="flex-grow-1 ps-3 commentbtn d-flex align-items-center" data-mdb-toggle="collapse" href="#col8" role="button" aria-expanded="false" aria-controls="col8"><span class="iconify me-2" data-icon="bx:message"></span>Comment</a>
                      </div>
                  </div>
                  <div class="col-4">
@@ -1096,7 +1459,31 @@
                         </div>
                       </div>
                  </div>
-                  <p class="text-muted mt-2 small p-share p-1">Share</p>
+                 <p class="text-muted mt-2 small p-share p-1 position-relative">
+                     <a href="" class="sharebtn hover mx-3">Share</a>
+                     <span class="iconify text-muted hover" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                  </p>
+                  <div v-if="false" class="share-post d-flex justify-content-between position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <div>
+                    <a href=""><p>Share to web</p></a>
+                    <small class="text-muted">This post is Public.</small>
+                  </div>
+                  <button class="btn btn-outline-gray ">Copy link</button>
+                </div>
+                <div v-if="false" class="post-option position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <a href="#"><div>
+                    <p>Edit post</p>
+                    <small class="text-muted">Make changes to this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Unfollow post</p>
+                    <small class="text-muted">Turn off notifications for this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Delete post</p>
+                    <small class="text-muted">Permanently delete this post</small>
+                  </div></a>
+                </div>
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
@@ -1110,14 +1497,12 @@
                <div class="row row-footer">
                   <div class="col-4">
                     <div class="col-12 footer-div">
-                      <i class="mdi mdi-thumb-up-outline"></i>
-                      <p>3k</p>
+                      <a href="" class="likebtn d-flex align-items-center"><span class="iconify" data-icon="fa-regular:thumbs-up"></span>Like</a>
                     </div>
                  </div>
                  <div class="col-4">
                      <div class="col-12 footer-div">
-                      <i class="mdi mdi-message-outline"></i>
-                      <p>12</p>
+                      <a class="flex-grow-1 ps-3 commentbtn d-flex align-items-center" data-mdb-toggle="collapse" href="#col9" role="button" aria-expanded="false" aria-controls="col9"><span class="iconify me-2" data-icon="bx:message"></span>Comment</a>
                      </div>
                  </div>
                  <div class="col-4">
@@ -1216,10 +1601,10 @@ export default {
 </script>
 
 <style scoped>
-/* *{
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+*{
+  /* font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
   color: hsl(0, 0%, 23.1%);
-} */
+}
 
 .hover{
   color: hsl(0, 0%, 23.1%);
@@ -1227,6 +1612,10 @@ export default {
 }
 .hover:hover{
   color: #0d6efd;
+}
+
+form{
+  margin-left:38px;
 }
 
 /* .page-body{
@@ -1279,6 +1668,9 @@ main{
   cursor: pointer;
 }
 
+.likebtn p{
+  margin: 0;
+}
 .sharebtn:hover, .likebtn:hover, .commentbtn{
   color: #000;
 }
@@ -1379,8 +1771,9 @@ main{
 }
 
 .share-post{
-  width: 100%;
-  top: 60%;
+  width: 65%;
+  top: 6%;
+  right: 2em;
   background: #fff;
   padding: 1em;
 }
@@ -1393,8 +1786,8 @@ main{
 
 .post-option{
   background: #fff;
-  top: 70%;
-  right: 0;
+  top: 6%;
+  right: 1em;
   width: 55%;
   padding: 1em;
 }
@@ -1412,6 +1805,10 @@ main{
 @media screen and (max-width: 1200px){
   main{
     grid-template-columns: 24% 50% 23%;
+  }
+
+  form{
+    margin-left: 0;
   }
 
   .main-post-img{
@@ -1443,6 +1840,17 @@ main{
   }
 
 
+}
+
+@media screen and (max-width: 450px){
+  .share-post{
+    width: 98%;
+    right: 0em;
+  }
+  .post-option{
+    right: 0em;
+    width: 98%;
+  }
 }
 
 </style>
