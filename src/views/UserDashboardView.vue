@@ -118,8 +118,8 @@
 
     <div class="row">
                
-    <nav id="mySidenav" class="col-md-3 sidebar-left p-4 d-md-block bg-light">
-      <div class="position-sticky pt-5">
+    <nav id="mySidenav" class="col-md-3 sidebar-left py-4 px-2 p-lg-4 d-lg-block bg-light">
+      <!-- <div class="position-sticky pt-5">
         <ul class="nav flex-column  nav-pills list-unstyled">
           <li class="mb-3">
             <a class="nav-link active" aria-current="page" href="/login">
@@ -280,6 +280,52 @@
             </a>
           </li>
         </ul>
+      </div> -->
+
+      <div class="side-menu g-col-3 g-col-md-3 position-sticky pt-5">
+           <button class="btn btn-primary w-100 text-white text-left d-flex align-items-center py-2"><span class="iconify me-2" style="color: #fff;" data-icon="bytesize:home"></span>Home</button>
+           <div class="side-menu-list-parent">
+
+             <div class="side-menu-list member">
+               <p>
+                 <span class="iconify text-black-50 fw-bolder me-2" data-icon="eva:arrow-right-fill" href="#collapseExample" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample"></span>
+                 <a href="" class="fw-normal">Members Central</a>               
+               </p>
+               
+               <div class="member_collapsed collapse" id="collapseExample">
+                  <a href="" class="individual-member"><span >👋</span>Start here</a>
+                  <a href="" class="individual-member"><span>😏</span>Introduce Yourself</a>
+               </div>
+             </div>
+
+             <div class="side-menu-list vip-group">
+               <p>
+                 <span class="iconify text-black-50 fw-bolder me-2" data-icon="eva:arrow-right-fill" href="#collapseExample2" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample2"></span>
+                 <a href="" class="fw-normal">VIP GROUPS</a>
+                 <span type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Create a space">
+                  <span class="iconify text-dark-50" style="font-size: 1rem;" data-icon="carbon:add-alt"></span>
+                </span>
+               </p>
+               <div class="member_collapsed collapse" id="collapseExample2">
+                  <a href="" class="individual-member"><span >🙋</span>Las Vegas Singles</a>
+                  <a href="" class="individual-member"><span>💱</span>No mint Mark</a>
+               </div>
+             </div>
+
+             <div class="side-menu-list vip-group">
+               <p>
+                 <span class="iconify text-black-50 fw-bolder me-2" data-icon="eva:arrow-right-fill" href="#collapseExample3" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample3"></span>
+                 <a href="" class="fw-normal">Admins</a>
+               </p>
+               <div class="member_collapsed collapse" id="collapseExample3">
+                  <a href="" class="individual-member"><span >😎</span>Zhivago Admins</a>
+               </div>
+             </div>
+             
+             
+             
+           </div>
+
       </div>
     </nav> 
 
@@ -289,8 +335,9 @@
  
     
   
-  <nav id="sidebarMenu" class="col-md-3 sidebar-right p-4 d-md-block bg-light collapse">
-      <div class="position-sticky pt-5">
+  <nav id="sidebarMenu" class="col-md-3 sidebar-right p-4 d-lg-block bg-light collapse">
+    <button class="btn btn-primary w-100 text-center text-white py-3 px-4 fw-bold">New Post</button>
+      <div class="position-sticky pt-3">
        <ul class="nav flex-column mb-auto px-4 box-shadow rounded" style="background:white;">
           <li class="nav-item">
             <p class="Trend-text px-1 mt-3 text-muted p-trending-post">Trending Posts</p>
@@ -361,22 +408,26 @@
           </li>
         </ul>
 
-
-          <ul class="nav flex-column mb-auto px-4 mt-3 box-shadow bg-dark">
+        <div class="text-center">
+          <em>-advertisement-</em>
+          <ul class="ad-space nav flex-column mb-auto px-4 mt-3 box-shadow bg-dark">
           <li class="nav-item p-0 m-0">
-                <div class="d-flex justify-content-center py-5">
+                
+                <div class="_ad_inner_space d-flex justify-content-center py-5">
                 <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
-                 <h3>Adverts here</h3>
+                 <h3>250 x 250</h3>
              </div>
           </li>
         </ul>
 
+        </div>
+          
         
       </div>
     </nav> 
 
  
-  <div class="main-view col-md-6  container bg-light">
+  <div class="main-view col-lg-6  container bg-light">
     <div class="row content gy-2">
 
       <div class="card card1 bg-light p-0 m-0  px-3 mt-3">
@@ -407,15 +458,16 @@
       </div>
 
 
-      <div class="card   p-0 mt-2 mb-4">
+      <div class="card text-center p-0 mt-2 mb-4">
+        <em>-advertisement-</em>
         <div class="card-body m-0 p-0">
              <div class="d-flex justify-content-center bg-dark py-5">
                 <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
                  <ul class="nav flex-column mb-auto px-4 mt-3 box-shadow bg-dark">
                   <li class="nav-item p-0 m-0">
-                        <div class="d-flex justify-content-center">
+                        <div class=" d-flex justify-content-center">
                         <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
-                          <h1>Adverts here</h1>
+                          <h1> 730 x 100</h1>
                       </div>
                   </li>
                 </ul>
@@ -478,6 +530,25 @@
                  </div>
                </div>
           </div>
+
+              <!-- advertisement -->
+          <div class="card text-center p-0 mt-2 mb-4">
+          <em>-advertisement-</em>
+          <div class="card-body m-0 p-0">
+              <div class="d-flex justify-content-center bg-dark py-5">
+                  <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
+                  <ul class="nav flex-column mb-auto px-4 mt-3 box-shadow bg-dark">
+                    <li class="nav-item p-0 m-0">
+                          <div class=" d-flex justify-content-center text-muted">
+                          <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
+                            <h1> 730 x 100</h1>
+                        </div>
+                    </li>
+                  </ul>
+                  
+              </div>
+            </div>
+        </div>
        </div>
 
 
@@ -533,6 +604,24 @@
                     </div>
                  </div>
                </div>
+          </div>
+                  <!-- advertisement -->
+              <div class="card text-center p-0 mt-2 mb-4">
+            <em>-advertisement-</em>
+            <div class="card-body m-0 p-0">
+                <div class="d-flex justify-content-center bg-dark py-5">
+                    <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
+                    <ul class="nav flex-column mb-auto px-4 mt-3 box-shadow bg-dark">
+                      <li class="nav-item p-0 m-0">
+                            <div class=" d-flex justify-content-center text-muted">
+                            <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
+                              <h1> 730 x 100</h1>
+                          </div>
+                      </li>
+                    </ul>
+                    
+                </div>
+              </div>
           </div>
        </div>
 
@@ -590,6 +679,24 @@
                  </div>
                </div>
           </div>
+              <!-- advertisement -->
+          <div class="card text-center p-0 mt-2 mb-4">
+        <em>-advertisement-</em>
+        <div class="card-body m-0 p-0">
+             <div class="d-flex justify-content-center bg-dark py-5">
+                <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
+                 <ul class="nav flex-column mb-auto px-4 mt-3 box-shadow bg-dark">
+                  <li class="nav-item p-0 m-0">
+                        <div class=" d-flex justify-content-center text-muted">
+                        <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
+                          <h1> 730 x 100</h1>
+                      </div>
+                  </li>
+                </ul>
+                
+             </div>
+          </div>
+      </div>
        </div>
       
  <div class="card text-dark mt-4 p-0 m-0">
@@ -645,6 +752,26 @@
                  </div>
                </div>
           </div>
+           
+              <!-- adveertisement -->
+
+            <div class="card text-center p-0 mt-2 mb-4">
+        <em>-advertisement-</em>
+        <div class="card-body m-0 p-0">
+             <div class="d-flex justify-content-center bg-dark py-5">
+                <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
+                 <ul class="nav flex-column mb-auto px-4 mt-3 box-shadow bg-dark">
+                  <li class="nav-item p-0 m-0">
+                        <div class=" d-flex justify-content-center text-muted">
+                        <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
+                          <h1> 730 x 100</h1>
+                      </div>
+                  </li>
+                </ul>
+                
+             </div>
+          </div>
+      </div>
        </div> 
 
 
@@ -702,6 +829,24 @@
                  </div>
                </div>
           </div>
+
+          <div class="card text-center p-0 mt-2 mb-4">
+        <em>-advertisement-</em>
+        <div class="card-body m-0 p-0">
+             <div class="d-flex justify-content-center bg-dark py-5">
+                <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
+                 <ul class="nav flex-column mb-auto px-4 mt-3 box-shadow bg-dark">
+                  <li class="nav-item p-0 m-0">
+                        <div class=" d-flex justify-content-center text-muted">
+                        <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
+                          <h1> 730 x 100</h1>
+                      </div>
+                  </li>
+                </ul>
+                
+             </div>
+          </div>
+      </div>
        </div> 
 
 
@@ -759,6 +904,25 @@
                  </div>
                </div>
           </div>
+
+            <!-- advertisement -->
+          <div class="card text-center p-0 mt-2 mb-4">
+        <em>-advertisement-</em>
+        <div class="card-body m-0 p-0">
+             <div class="d-flex justify-content-center bg-dark py-5">
+                <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
+                 <ul class="nav flex-column mb-auto px-4 mt-3 box-shadow bg-dark">
+                  <li class="nav-item p-0 m-0">
+                        <div class=" d-flex justify-content-center text-muted">
+                        <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
+                          <h1> 730 x 100</h1>
+                      </div>
+                  </li>
+                </ul>
+                
+             </div>
+          </div>
+      </div>
        </div> 
 
 
@@ -816,6 +980,24 @@
                  </div>
                </div>
           </div>
+
+            <div class="card text-center p-0 mt-2 mb-4">
+        <em>-advertisement-</em>
+        <div class="card-body m-0 p-0">
+             <div class="d-flex justify-content-center bg-dark py-5">
+                <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
+                 <ul class="nav flex-column mb-auto px-4 mt-3 box-shadow bg-dark">
+                  <li class="nav-item p-0 m-0">
+                        <div class=" d-flex justify-content-center text-muted">
+                        <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
+                          <h1> 730 x 100</h1>
+                      </div>
+                  </li>
+                </ul>
+                
+             </div>
+          </div>
+      </div>
        </div> 
 
 
@@ -872,6 +1054,24 @@
                  </div>
                </div>
           </div>
+          
+          <div class="card text-center p-0 mt-2 mb-4">
+        <em>-advertisement-</em>
+        <div class="card-body m-0 p-0">
+             <div class="d-flex justify-content-center bg-dark py-5">
+                <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
+                 <ul class="nav flex-column mb-auto px-4 mt-3 box-shadow bg-dark">
+                  <li class="nav-item p-0 m-0">
+                        <div class=" d-flex justify-content-center text-muted">
+                        <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
+                          <h1> 730 x 100</h1>
+                      </div>
+                  </li>
+                </ul>
+                
+             </div>
+          </div>
+      </div>
        </div> 
 
 
@@ -928,6 +1128,24 @@
                  </div>
                </div>
           </div>
+
+          <div class="card text-center p-0 mt-2 mb-4">
+        <em>-advertisement-</em>
+        <div class="card-body m-0 p-0">
+             <div class="d-flex justify-content-center bg-dark py-5">
+                <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
+                 <ul class="nav flex-column mb-auto px-4 mt-3 box-shadow bg-dark">
+                  <li class="nav-item p-0 m-0">
+                        <div class=" d-flex justify-content-center text-muted">
+                        <!-- <img src="/cars/11231.jpg" class="img-fluid" alt="..."> -->
+                          <h1> 730 x 100</h1>
+                      </div>
+                  </li>
+                </ul>
+                
+             </div>
+          </div>
+      </div>
        </div> 
 
 
@@ -979,6 +1197,12 @@ export default {
       getskeletonLoader(){
         return this.$store.getters.getskeletonLoader
       },
+      getUser(){
+         return  this.$store.getters.getUser
+       },
+       getLoader() {
+       return this.$store.getters.getLoader
+       }, 
    },
 
    methods:{
@@ -991,7 +1215,236 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
+/* *{
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: hsl(0, 0%, 23.1%);
+} */
 
+.hover{
+  color: hsl(0, 0%, 23.1%);
+  cursor: pointer;
+}
+.hover:hover{
+  color: #0d6efd;
+}
+
+/* .page-body{
+  max-width: 1440px!important;
+} */
+/* .logo{
+  width: 15% !important;
+} */
+
+/* .profile{
+  width: 23%;
+}
+.user-profile{
+  width: 16%;
+  display: flex;
+  justify-content: space-around;
+} */
+/* 
+main{
+  display: grid;
+  grid-template-columns: 20% 55% 20%;
+  gap: 2em;
+  background: #fff;
+  margin-inline: auto;
+} */
+
+/* .search{
+  background: #EFFFFD  !important;
+} */
+
+.tp_img{
+  width: 18%
+
+}
+
+.tp_details h5{
+  font-size: 0.9rem;
+  margin-bottom: 0.3em;
+  margin-top: 0.5em;
+}
+
+.username_tp{
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.sharebtn, .likebtn, .commentbtn{
+  color: hsl(219, 14%, 50%);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sharebtn:hover, .likebtn:hover, .commentbtn{
+  color: #000;
+}
+
+/* .main-posts{
+  height: 100vh;
+  max-height: 100vh;
+  position: relative;
+} */
+
+.post-ad-inner-space{
+  height: 90px!important;
+  width: 100%!important;
+  max-width: 730px;
+}
+
+._ad_inner_space{
+  /* background: #eee; */
+  height: 250px;
+  width: 250px;
+  margin-inline: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-menu-list{
+  margin: 2em 0.5em;
+}
+
+.side-menu-list p{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.side-menu-list a{
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.1rem;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.member_collapsed{
+  margin: 0 1em;
+
+}
+
+.member_collapsed a{
+  text-decoration: none;
+  color: hsl(219, 14%, 50%);
+  margin: 0.5em 0;
+  display: flex;
+  font-size: 0.9rem;
+}
+
+.member_collapsed a span{
+  margin-right: 0.5em;
+}
+
+.main-post-img{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-post-img img{
+  width: 48%;
+}
+
+.comment-text{
+  width: 100%;
+}
+
+/* .profile-details{
+
+ } */
+
+.authentication ul li{
+  list-style-type: none;
+
+}
+
+.profileImg{
+  width: 8%;
+}
+
+.new-comment-input{
+  border: none;
+  outline: none;
+}
+
+.post-likes-img{
+  width: 35%;
+}
+
+.share-post{
+  width: 100%;
+  top: 60%;
+  background: #fff;
+  padding: 1em;
+}
+
+.share-post p, .post-option a p{
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.post-option{
+  background: #fff;
+  top: 70%;
+  right: 0;
+  width: 55%;
+  padding: 1em;
+}
+
+.post-option a{
+  text-decoration: none;
+}
+
+.post-option a div{
+  margin-block: 0.5em;
+}
+
+
+ 
+@media screen and (max-width: 1200px){
+  main{
+    grid-template-columns: 24% 50% 23%;
+  }
+
+  .main-post-img{
+  height: 100%;
+  }
+
+  .login-signup{
+  width: 21%;
+  }
+
+  .pos_absolute{
+    width: 45%;
+    left: 28%;
+  }
+
+  .post-ad-inner-space{
+  width: 100%!important;
+}
+
+}
+
+@media screen and (max-width: 800px){
+  main{
+    display: block;
+  }
+
+  .profile{
+    width: 35%;
+  }
+
+
+}
 
 </style>
+
+
