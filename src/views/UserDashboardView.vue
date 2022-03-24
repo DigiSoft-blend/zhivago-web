@@ -283,7 +283,7 @@
       </div> -->
 
       <div class="side-menu g-col-3 g-col-md-3 position-sticky pt-5">
-           <button class="btn btn-primary w-100 text-white text-left d-flex align-items-center py-2"><span class="iconify me-2" style="color: #fff;" data-icon="bytesize:home"></span>Home</button>
+           <button class="btn btn-primary w-100 text-white fw-normal text-left d-flex align-items-center py-2"><span class="iconify me-2" style="color: #fff;" data-icon="bytesize:home"></span>Home</button>
            <div class="side-menu-list-parent">
 
              <div class="side-menu-list member">
@@ -498,7 +498,31 @@
                         </div>
                       </div>
                  </div>
-                  <p class="text-muted mt-2 small p-share p-1">Share</p>
+                  <p class="text-muted mt-2 small p-share p-1 position-relative">
+                     <a href="" class="sharebtn hover mx-3">Share</a>
+                     <span class="iconify text-muted hover" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                  </p>
+                  <div v-if="false" class="share-post d-flex justify-content-between position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <div>
+                    <a href=""><p>Share to web</p></a>
+                    <small class="text-muted">This post is Public.</small>
+                  </div>
+                  <button class="btn btn-outline-gray ">Copy link</button>
+                </div>
+                <div v-if="false" class="post-option position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <a href="#"><div>
+                    <p>Edit post</p>
+                    <small class="text-muted">Make changes to this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Unfollow post</p>
+                    <small class="text-muted">Turn off notifications for this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Delete post</p>
+                    <small class="text-muted">Permanently delete this post</small>
+                  </div></a>
+                </div>
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
@@ -573,7 +597,31 @@
                         </div>
                       </div>
                  </div>
-                  <p class="text-muted mt-2 small p-share p-1">Share</p>
+                  <p class="text-muted mt-2 small p-share p-1 position-relative">
+                     <a href="" class="sharebtn hover mx-3">Share</a>
+                     <span class="iconify text-muted hover" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                  </p>
+                  <div v-if="false" class="share-post d-flex justify-content-between position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <div>
+                    <a href=""><p>Share to web</p></a>
+                    <small class="text-muted">This post is Public.</small>
+                  </div>
+                  <button class="btn btn-outline-gray ">Copy link</button>
+                </div>
+                <div v-if="false" class="post-option position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <a href="#"><div>
+                    <p>Edit post</p>
+                    <small class="text-muted">Make changes to this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Unfollow post</p>
+                    <small class="text-muted">Turn off notifications for this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Delete post</p>
+                    <small class="text-muted">Permanently delete this post</small>
+                  </div></a>
+                </div>
           </div>
           <div class="card-body m-0 p-0">
              <div class="mx-3">
@@ -647,7 +695,31 @@
                         </div>
                       </div>
                  </div>
-                  <p class="text-muted mt-2 small p-share p-1">Share</p>
+                  <p class="text-muted mt-2 small p-share p-1 position-relative">
+                     <a href="" class="sharebtn hover mx-3">Share</a>
+                     <span class="iconify text-muted hover" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                  </p>
+                  <div v-if="false" class="share-post d-flex justify-content-between position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <div>
+                    <a href=""><p>Share to web</p></a>
+                    <small class="text-muted">This post is Public.</small>
+                  </div>
+                  <button class="btn btn-outline-gray ">Copy link</button>
+                </div>
+                <div v-if="false" class="post-option position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <a href="#"><div>
+                    <p>Edit post</p>
+                    <small class="text-muted">Make changes to this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Unfollow post</p>
+                    <small class="text-muted">Turn off notifications for this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Delete post</p>
+                    <small class="text-muted">Permanently delete this post</small>
+                  </div></a>
+                </div>
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
@@ -720,7 +792,31 @@
                         </div>
                       </div>
                  </div>
-                  <p class="text-muted mt-2 small p-share p-1">Share</p>
+                  <p class="text-muted mt-2 small p-share p-1 position-relative">
+                     <a href="" class="sharebtn hover mx-3">Share</a>
+                     <span class="iconify text-muted hover" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                  </p>
+                  <div v-if="false" class="share-post d-flex justify-content-between position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <div>
+                    <a href=""><p>Share to web</p></a>
+                    <small class="text-muted">This post is Public.</small>
+                  </div>
+                  <button class="btn btn-outline-gray ">Copy link</button>
+                </div>
+                <div v-if="false" class="post-option position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <a href="#"><div>
+                    <p>Edit post</p>
+                    <small class="text-muted">Make changes to this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Unfollow post</p>
+                    <small class="text-muted">Turn off notifications for this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Delete post</p>
+                    <small class="text-muted">Permanently delete this post</small>
+                  </div></a>
+                </div>
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
@@ -797,7 +893,31 @@
                         </div>
                       </div>
                  </div>
-                  <p class="text-muted mt-2 small p-share p-1">Share</p>
+                  <p class="text-muted mt-2 small p-share p-1 position-relative">
+                     <a href="" class="sharebtn hover mx-3">Share</a>
+                     <span class="iconify text-muted hover" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                  </p>
+                  <div v-if="false" class="share-post d-flex justify-content-between position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <div>
+                    <a href=""><p>Share to web</p></a>
+                    <small class="text-muted">This post is Public.</small>
+                  </div>
+                  <button class="btn btn-outline-gray ">Copy link</button>
+                </div>
+                <div v-if="false" class="post-option position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <a href="#"><div>
+                    <p>Edit post</p>
+                    <small class="text-muted">Make changes to this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Unfollow post</p>
+                    <small class="text-muted">Turn off notifications for this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Delete post</p>
+                    <small class="text-muted">Permanently delete this post</small>
+                  </div></a>
+                </div>
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
@@ -872,7 +992,31 @@
                         </div>
                       </div>
                  </div>
-                  <p class="text-muted mt-2 small p-share p-1">Share</p>
+                  <p class="text-muted mt-2 small p-share p-1 position-relative">
+                     <a href="" class="sharebtn hover mx-3">Share</a>
+                     <span class="iconify text-muted hover" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                  </p>
+                  <div v-if="false" class="share-post d-flex justify-content-between position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <div>
+                    <a href=""><p>Share to web</p></a>
+                    <small class="text-muted">This post is Public.</small>
+                  </div>
+                  <button class="btn btn-outline-gray ">Copy link</button>
+                </div>
+                <div v-if="false" class="post-option position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <a href="#"><div>
+                    <p>Edit post</p>
+                    <small class="text-muted">Make changes to this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Unfollow post</p>
+                    <small class="text-muted">Turn off notifications for this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Delete post</p>
+                    <small class="text-muted">Permanently delete this post</small>
+                  </div></a>
+                </div>
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
@@ -948,7 +1092,31 @@
                         </div>
                       </div>
                  </div>
-                  <p class="text-muted mt-2 small p-share p-1">Share</p>
+                  <p class="text-muted mt-2 small p-share p-1 position-relative">
+                     <a href="" class="sharebtn hover mx-3">Share</a>
+                     <span class="iconify text-muted hover" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                  </p>
+                  <div v-if="false" class="share-post d-flex justify-content-between position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <div>
+                    <a href=""><p>Share to web</p></a>
+                    <small class="text-muted">This post is Public.</small>
+                  </div>
+                  <button class="btn btn-outline-gray ">Copy link</button>
+                </div>
+                <div v-if="false" class="post-option position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <a href="#"><div>
+                    <p>Edit post</p>
+                    <small class="text-muted">Make changes to this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Unfollow post</p>
+                    <small class="text-muted">Turn off notifications for this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Delete post</p>
+                    <small class="text-muted">Permanently delete this post</small>
+                  </div></a>
+                </div>
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
@@ -1022,7 +1190,31 @@
                         </div>
                       </div>
                  </div>
-                  <p class="text-muted mt-2 small p-share p-1">Share</p>
+                  <p class="text-muted mt-2 small p-share p-1 position-relative">
+                     <a href="" class="sharebtn hover mx-3">Share</a>
+                     <span class="iconify text-muted hover" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                  </p>
+                  <div v-if="false" class="share-post d-flex justify-content-between position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <div>
+                    <a href=""><p>Share to web</p></a>
+                    <small class="text-muted">This post is Public.</small>
+                  </div>
+                  <button class="btn btn-outline-gray ">Copy link</button>
+                </div>
+                <div v-if="false" class="post-option position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <a href="#"><div>
+                    <p>Edit post</p>
+                    <small class="text-muted">Make changes to this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Unfollow post</p>
+                    <small class="text-muted">Turn off notifications for this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Delete post</p>
+                    <small class="text-muted">Permanently delete this post</small>
+                  </div></a>
+                </div>
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
@@ -1096,7 +1288,31 @@
                         </div>
                       </div>
                  </div>
-                  <p class="text-muted mt-2 small p-share p-1">Share</p>
+                 <p class="text-muted mt-2 small p-share p-1 position-relative">
+                     <a href="" class="sharebtn hover mx-3">Share</a>
+                     <span class="iconify text-muted hover" style="font-size: 1.7rem;" data-icon="mi:options-horizontal"></span>
+                  </p>
+                  <div v-if="false" class="share-post d-flex justify-content-between position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <div>
+                    <a href=""><p>Share to web</p></a>
+                    <small class="text-muted">This post is Public.</small>
+                  </div>
+                  <button class="btn btn-outline-gray ">Copy link</button>
+                </div>
+                <div v-if="false" class="post-option position-absolute border border-gray border-1 rounded-1 shadow-sm">
+                  <a href="#"><div>
+                    <p>Edit post</p>
+                    <small class="text-muted">Make changes to this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Unfollow post</p>
+                    <small class="text-muted">Turn off notifications for this post</small>
+                  </div></a>
+                   <a href="#"><div>
+                    <p>Delete post</p>
+                    <small class="text-muted">Permanently delete this post</small>
+                  </div></a>
+                </div>
           </div>
           <div class="card-body m-0 p-0">
             <div class="mx-3">
@@ -1216,10 +1432,10 @@ export default {
 </script>
 
 <style scoped>
-/* *{
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+*{
+  /* font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
   color: hsl(0, 0%, 23.1%);
-} */
+}
 
 .hover{
   color: hsl(0, 0%, 23.1%);
@@ -1379,8 +1595,9 @@ main{
 }
 
 .share-post{
-  width: 100%;
-  top: 60%;
+  width: 65%;
+  top: 6%;
+  right: 2em;
   background: #fff;
   padding: 1em;
 }
@@ -1393,8 +1610,8 @@ main{
 
 .post-option{
   background: #fff;
-  top: 70%;
-  right: 0;
+  top: 6%;
+  right: 1em;
   width: 55%;
   padding: 1em;
 }
@@ -1443,6 +1660,17 @@ main{
   }
 
 
+}
+
+@media screen and (max-width: 450px){
+  .share-post{
+    width: 98%;
+    right: 0em;
+  }
+  .post-option{
+    right: 0em;
+    width: 98%;
+  }
 }
 
 </style>
