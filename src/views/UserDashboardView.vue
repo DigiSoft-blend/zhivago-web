@@ -26,7 +26,7 @@
      
        <img class="navbar-brand logo mx-4" src="/assets/images/zhivago-logo.png" alt="logo" />
 
-          <form style="margin-left:38px">
+          <form>
              <div class="search">
                <input class="nav-form-input form-control" type="text" placeholder="Search" aria-label="Search">
                <i class="mdi mdi-magnify icon"></i> 
@@ -1445,6 +1445,10 @@ export default {
   color: #0d6efd;
 }
 
+form{
+  margin-left:38px;
+}
+
 /* .page-body{
   max-width: 1440px!important;
 } */
@@ -1629,6 +1633,10 @@ main{
 @media screen and (max-width: 1200px){
   main{
     grid-template-columns: 24% 50% 23%;
+  }
+
+  form{
+    margin-left: 0;
   }
 
   .main-post-img{
